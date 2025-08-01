@@ -13,6 +13,9 @@ Output_metadata/**/*.csv
 # Ignore notebook checkpoints
 **/.ipynb_checkpoints/
 
+#big csv files in root
+/*.csv
+
 # Ignore system files
 .DS_Store
 Thumbs.db
