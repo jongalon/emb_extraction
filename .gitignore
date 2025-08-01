@@ -10,6 +10,15 @@ Output_files/**/*.WAV
 Original_metadata/**/*.csv
 Output_metadata/**/*.csv
 
+#big files
+# Archivos CSV grandes específicos
+Output_metadata/GreatTit_metadata/final_greatTit_metadata.csv
+Output_metadata/GreatTit_metadata/train_metadata.csv
+Original_metadata/GreatTit_metadata/feature_vectors.csv
+Original_metadata/GreatTit_metadata/great-tit-hits-crowsetta.csv
+Original_metadata/GreatTit_metadata/great-tit-hits.csv
+
+
 # Ignore notebook checkpoints
 **/.ipynb_checkpoints/
 
