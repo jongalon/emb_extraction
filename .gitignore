@@ -6,6 +6,10 @@ Original_datasets/**/*.WAV
 Output_files/**/*.wav
 Output_files/**/*.WAV
 
+# Ignore CSV files of metadata
+Original_metadata/**/*.csv
+Output_metadata/**/*.csv
+
 # Ignore notebook checkpoints
 **/.ipynb_checkpoints/
 
