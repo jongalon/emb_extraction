@@ -1,0 +1,14 @@
+# Ignore audio files in the original datasets
+Original_datasets/**/*.wav
+Original_datasets/**/*.WAV
+
+# Ignore audio files generated with extended durations
+Output_files/**/*.wav
+Output_files/**/*.WAV
+
+# Ignore notebook checkpoints
+**/.ipynb_checkpoints/
+
+# Ignore system files
+.DS_Store
+Thumbs.db
