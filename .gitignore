@@ -11,6 +11,10 @@ Original_metadata/**/*.csv
 Output_metadata/**/*.csv
 
 #big files
+
+Output_files/**/*.csv
+
+
 # Archivos CSV grandes específicos
 Output_metadata/GreatTit_metadata/final_greatTit_metadata.csv
 Output_metadata/GreatTit_metadata/train_metadata.csv
