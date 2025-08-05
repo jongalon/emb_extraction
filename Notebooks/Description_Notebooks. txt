@@ -1,0 +1,14 @@
+
+The Notebooks folder contains 4 subdirectories and 1 file:
+
+Directories:
+- 1_Preprocess_rtbc: Data preprocessing for rtbc dataset
+- 2_Preprocess_greatTit: Data preprocessing for great tit dataset  
+- 3_Adding silence: Processing to add silence segments to datasets
+- 4_gettingEmbeddings: Generation of embeddings from processed data
+
+Files:
+- Description.txt: This description file
+
+The directories follow a sequential workflow for data preprocessing and 
+embedding generation for bioacoustic analysis of bird species 

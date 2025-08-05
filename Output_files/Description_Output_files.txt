@@ -1,0 +1,10 @@
+In this folder you will have several output files divided by category.
+
+1. audio_durations: This folder will be generated after running the 
+    Adding_silence_to_audios.ipynb Notebooks. It will have a csv file per
+    dataset with duration information of each vocalization and the padding 
+    time to obtain a multiple of 3 seconds.
+2. Embeddings_from_3sPadding: This folder will contain the embeddings (in 
+    csv format) extracted using birdnet over the audios with the padding 
+    silence. To obtain the files you need to run the 1_getting_embeddings.ipynb
+    Notebook

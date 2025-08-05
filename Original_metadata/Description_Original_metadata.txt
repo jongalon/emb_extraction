@@ -1,0 +1,3 @@
+Paste here the metada of each of the datasets in csv format.
+Use a separate folder for each dataset.
+You can use the original metadata and transform it with the notebooks

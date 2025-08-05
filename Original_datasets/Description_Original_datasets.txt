@@ -1,0 +1,5 @@
+Please paste here the audio datasets of the species with the WAV files. 
+Use a separate folder for each species. 
+You can use the same pattern of the original files
+
+Then, you can start running the notebooks.

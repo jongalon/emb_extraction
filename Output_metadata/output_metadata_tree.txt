@@ -1,0 +1,26 @@
+In this folder you should have this file pattern:
+
+You need to run the preprocess_rtbc and Preprocess_greatTit.
+
+
+Output_metadata
+├── GreatTit_metadata
+│   ├── final_greatTit_metadata.csv
+│   ├── test_metadata.csv
+│   ├── train_metadata.csv
+│   └── val_metadata.csv
+├── chiffchaff-fg
+│   ├── chiffchaff-withinyear-fg-trn.csv
+│   └── chiffchaff-withinyear-fg-tst.csv
+├── littleowl-fg
+│   ├── littleowl-acrossyear-fg-trn.csv
+│   └── littleowl-acrossyear-fg-tst.csv
+├── littlepenguin_metadata
+│   └── littlepenguin_metadata_corrected.csv
+├── pipit-fg
+│   ├── pipit-withinyear-fg-trn.csv
+│   └── pipit-withinyear-fg-tst.csv
+└── rtbc_metadata
+    └── rtbc_metadata.csv
+
+6 directories, 12 files
