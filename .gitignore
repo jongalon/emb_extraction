@@ -22,6 +22,15 @@ Original_metadata/GreatTit_metadata/feature_vectors.csv
 Original_metadata/GreatTit_metadata/great-tit-hits-crowsetta.csv
 Original_metadata/GreatTit_metadata/great-tit-hits.csv
 
+# Ignore all Parquet and NPZ files (embeddings/shards)
+Output_files/**/*.parquet
+Output_files/**/*.npz
+
+# Optional: ignore entire embeddings directories
+Output_files/**/_parquet_parts/
+Output_files/**/_npz_shards/
+
+
 
 # Ignore notebook checkpoints
 **/.ipynb_checkpoints/
