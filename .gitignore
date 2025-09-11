@@ -41,3 +41,14 @@ Output_files/**/_npz_shards/
 # Ignore system files
 .DS_Store
 Thumbs.db
+
+# IDE and workspace folders
+.idea/
+.keras/
+.lightning_studio/
+.vscode/
+
+# Local server/temporary files
+.cursor-server
+.vscode-server
+.widnsurf-server
