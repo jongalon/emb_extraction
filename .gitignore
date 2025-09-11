@@ -6,14 +6,15 @@ Original_datasets/**/*.WAV
 Output_files/**/*.wav
 Output_files/**/*.WAV
 
+#Ignore original metadata
+Original_metadata/
+
 # Ignore CSV files of metadata
 Original_metadata/**/*.csv
 Output_metadata/**/*.csv
 
-#big files
-
+#big csv files
 Output_files/**/*.csv
-
 
 # Archivos CSV grandes específicos
 Output_metadata/GreatTit_metadata/final_greatTit_metadata.csv
@@ -29,7 +30,6 @@ Output_files/**/*.npz
 # Optional: ignore entire embeddings directories
 Output_files/**/_parquet_parts/
 Output_files/**/_npz_shards/
-
 
 
 # Ignore notebook checkpoints
