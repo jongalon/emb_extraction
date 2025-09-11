@@ -1,8 +1,5 @@
 In this folder you should have this file pattern:
 
-You need to run the preprocess_rtbc and Preprocess_greatTit.
-
-
 Output_metadata
 ├── GreatTit_metadata
 │   ├── final_greatTit_metadata.csv
@@ -12,6 +9,8 @@ Output_metadata
 ├── chiffchaff-fg
 │   ├── chiffchaff-withinyear-fg-trn.csv
 │   └── chiffchaff-withinyear-fg-tst.csv
+├── KiwiTrimmed
+│   └── kiwi_metadata.csv
 ├── littleowl-fg
 │   ├── littleowl-acrossyear-fg-trn.csv
 │   └── littleowl-acrossyear-fg-tst.csv

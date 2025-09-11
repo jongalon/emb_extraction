@@ -35,6 +35,8 @@ Output_metadata
 ├── chiffchaff-fg
 │   ├── chiffchaff-withinyear-fg-trn.csv
 │   └── chiffchaff-withinyear-fg-tst.csv
+├── KiwiTrimmed
+│   └── kiwi_metadata.csv
 ├── littleowl-fg
 │   ├── littleowl-acrossyear-fg-trn.csv
 │   └── littleowl-acrossyear-fg-tst.csv
@@ -47,19 +49,30 @@ Output_metadata
     └── rtbc_metadata.csv
 ```
 
-## Extracting birdnet embeddings
-before extracting embeddings it is necessary to pad every single vocalization to be a multiple of 3s. 
-Therefore you need to run the `Adding_silence_to_audios.ipynb.` notebook located in Notebooks/3_Adding silence/Adding_silence_to_audios.ipynb
-You will obtain audios able to be processed by birdnet to get the embeddings. This process could take a lot of time in big datasets. So, be patient.
+## Extracting BirdNET Embeddings
 
-Then, you can extract embeddings using the `1_gettingEmbeddings_parquet.ipynb` notebook. This notebook processes audio datasets by extracting embeddings using the **Birdnetlib library** and saving the results in Parquet format. It is designed to handle multiple bird species datasets.
-Make sure to adjust the paths and parameters in the notebook according to your specific dataset and requirements.
+Before extracting embeddings, each vocalization must be padded so its duration is a multiple of 3 seconds.  
+Run the following notebook first:
 
--  **Parquet parts** for each dataset, saved under:
-  ```
+`Notebooks/3_Adding silence/Adding_silence_to_audios.ipynb`
+
+This notebook adds the necessary silence and outputs audio files ready to be processed by BirdNET.  
+For large datasets this step can be time-consuming, so please be patient.
+
+Next, extract the embeddings with:
+
+`Notebooks/4_gettingEmbeddings/1_gettingEmbeddings_parquet.ipynb`
+
+This notebook uses the **BirdNETlib** library to process the padded audio datasets, extract embeddings, and save the results in [Parquet](https://parquet.apache.org/) format.  
+Make sure to adjust the file paths and parameters inside the notebook to match your specific dataset and requirements.
+
+Each dataset will produce a set of **Parquet parts**, saved under:
+
+ ```
   Output_files/Embeddings_from_3sPadding/<dataset_name>_parquet_parts/
   ```
-  Example:  
+
+Example:  
   `Output_files/Embeddings_from_3sPadding/littleowl_parquet_parts/part_0000.parquet`
   `Output_files/Embeddings_from_3sPadding/littleowl_parquet_parts/littleowl_processed_files.parquet`
 
