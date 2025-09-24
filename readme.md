@@ -1,3 +1,38 @@
+# Project Setup
+
+## Setting Up the Environment
+
+### Option A — Local (Conda)
+1. Install [Miniconda](https://docs.conda.io/en/latest/miniconda.html) or [Anaconda](https://www.anaconda.com/).
+2. Create the environment:
+   ```bash
+   conda env create -f environment.yml
+   conda activate cloudspace
+   ```
+3. (Optional) Update later:
+   ```bash
+   conda env update -f environment.yml --name cloudspace
+   ```
+
+
+### Option B — Lightning Studio (single built-in Conda env)
+Lightning Studios give you one default Conda environment (often called `cloudspace`). **Update that active env in place**:
+
+```bash
+# from the repo root
+conda env update -f environment.yml
+```
+---
+
+### Option C — Pip-only install (CI / minimal images / quick start)
+If you just want the `pip:` packages from the YAML (e.g., when Conda changes are not allowed), create `requirements.txt` from the `pip:` block and install:
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
 ## Audio Datasets
 
 The datasets used in this project are **not included in this repository**.  
