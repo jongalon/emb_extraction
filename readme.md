@@ -46,7 +46,7 @@ Please follow these guidelines when preparing your local dataset structure:
 
 1. **Folder location**: place all datasets inside the `Original_datasets` folder located in the project root.  
 2. **Folder organization**: within `Original_datasets`, create a separate folder for each species and store the corresponding WAV files inside it.  
-3. **File naming**: keep the same naming pattern as in the Google Drive link to ensure compatibility with the provided notebooks.
+3. **File naming**: Do not rename audio files. Keep the filenames as distributed in the Zenodo Datasets/ folder to match the provided metadata and notebooks.
 
 Once your dataset is in place, you can start running the Jupyter notebooks.
 
@@ -101,6 +101,10 @@ Next, extract the embeddings with:
 This notebook uses the **BirdNETlib** library to process the padded audio datasets, extract embeddings, and save the results in [Parquet](https://parquet.apache.org/) format.  
 Make sure to adjust the file paths and parameters inside the notebook to match your specific dataset and requirements.
 
+Embeddings are extracted using BirdNET v2.4 via birdnetlib (1024-D embeddings, classification head removed). Audio is processed in non-overlapping 3 s windows after zero-padding to the next 3 s multiple.
+“birdnetlib handles resampling to 48 kHz and spectrogram generation internally.”
+
+## Outputs
 Each dataset will produce a set of **Parquet parts**, saved under:
 
  ```
