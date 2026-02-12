@@ -36,9 +36,9 @@ pip install -r requirements.txt
 ## Audio Datasets
 
 The datasets used in this project are **not included in this repository**.  
-You can access them through the following shared folder:
+You can access them through the following link:
 
-[Datasets - Google Drive link](https://drive.google.com/drive/folders/1ipabCSVvvLChGGoSmVTdmwHxAdwvKYrz?usp=sharing)
+[Datasets - Zenodo](https://doi.org/10.5281/zenodo.18603176)
 
 Alternatively, you may collect the audio files directly from their original sources if you prefer.
 
@@ -56,7 +56,7 @@ Once your dataset is in place, you can start running the Jupyter notebooks.
 The metadata of datasets used in this project are **not included in thi repository**
 You can access them through the following shared folder:
 
-[Metadata - Google Drive link](https://drive.google.com/drive/folders/1eSkF3YdYzg2Co7K8l4o6DfWaaARXvKX0?usp=sharing)
+[Metadata - Zenodo](https://doi.org/10.5281/zenodo.18603176)
 
 Then, paste the downloaded files into the `Output_metadata` folder using the following structure:
 
