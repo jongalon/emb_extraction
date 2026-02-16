@@ -16,7 +16,7 @@
 
 
 ### Option B — Lightning Studio (single built-in Conda env)
-Lightning Studios give you one default Conda environment (often called `cloudspace`). **Update that active env in place**:
+Lightning Studios gives you one default Conda environment (often called `cloudspace`). **Update that active env in place**:
 
 ```bash
 # from the repo root
@@ -53,7 +53,7 @@ Once your dataset is in place, you can start running the Jupyter notebooks.
 
 ## Metadata
 
-The metadata of datasets used in this project are **not included in thi repository**
+The metadata of datasets used in this project are **not included in this repository**
 You can access them through the following shared folder:
 
 [Metadata - Zenodo](https://doi.org/10.5281/zenodo.18603176)
@@ -92,7 +92,7 @@ Run the following notebook first:
 `Notebooks/3_Adding silence/Adding_silence_to_audios.ipynb`
 
 This notebook adds the necessary silence and outputs audio files ready to be processed by BirdNET.  
-For large datasets this step can be time-consuming, so please be patient.
+For large datasets, this step can be time-consuming, so please be patient.
 
 Next, extract the embeddings with:
 
@@ -114,4 +114,7 @@ Each dataset will produce a set of **Parquet parts**, saved under:
 Example:  
   `Output_files/Embeddings_from_3sPadding/littleowl_parquet_parts/part_0000.parquet`
   `Output_files/Embeddings_from_3sPadding/littleowl_parquet_parts/littleowl_processed_files.parquet`
+
+Once embeddings are extracted, they can be used as input for the [embedding-to-individual-id repository](https://github.com/jongalon/embedding-to-individual-id.git)
+
 
