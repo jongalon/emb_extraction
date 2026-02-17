@@ -22,16 +22,7 @@ Lightning Studios gives you one default Conda environment (often called `cloudsp
 # from the repo root
 conda env update -f environment.yml
 ```
----
 
-### Option C — Pip-only install (CI / minimal images / quick start)
-If you just want the `pip:` packages from the YAML (e.g., when Conda changes are not allowed), create `requirements.txt` from the `pip:` block and install:
-
-```bash
-pip install -r requirements.txt
-```
-
----
 
 ## Audio Datasets
 
@@ -115,6 +106,9 @@ Example:
   `Output_files/Embeddings_from_3sPadding/littleowl_parquet_parts/part_0000.parquet`
   `Output_files/Embeddings_from_3sPadding/littleowl_parquet_parts/littleowl_processed_files.parquet`
 
-Once embeddings are extracted, they can be used as input for the [embedding-to-individual-id repository](https://github.com/jongalon/embedding-to-individual-id.git)
+Once embeddings are extracted, they can be used as input for the [embedding to individual repository](https://anonymous.4open.science/r/emb-to-ind/README.md)
+
+## License
+This project is licensed under the [MIT License](LICENSE).
 
 
