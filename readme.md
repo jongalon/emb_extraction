@@ -1,5 +1,7 @@
 # Project Setup
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18603176.svg)](https://doi.org/10.5281/zenodo.18603176)
+
 ## Setting Up the Environment
 
 ### Option A — Local (Conda)
