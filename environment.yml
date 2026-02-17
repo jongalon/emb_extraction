@@ -425,4 +425,4 @@ dependencies:
       - widgetsnbextension==4.0.13
       - wrapt==1.14.1
       - yarl==1.18.3
-prefix: /home/zeus/miniconda3/envs/cloudspace
+
